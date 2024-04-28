@@ -1,0 +1,88 @@
+
+src/test/NemaGreskeIF.txt
+
+class test {
+ int i ;
+ int k ;
+ main ( )
+ {
+ if ( i < 5 ) {
+ i = 7 ;
+ } else {
+ k = 55 ;
+ }
+ }
+}
+_________________________________________
+
+src/test/ImaGreskaWhile.txt
+
+class test {
+ public int i ;
+ private static int k ;
+ main ( )
+ {
+ while ( i < 5 ) {
+ if ( i > 2 ) {
+    while ( i > 3 ) {
+    i =                                     <- nedostaje izraz
+ }
+ }
+ }
+}
+__________________________________________
+
+src/test/NemaGreskeBasVelikiKod.txt
+
+class test {
+ public int i ;
+ private int c ;
+ static int j ;
+ private int J ;
+ private static int k ;
+ main ( )
+ {
+ while ( i < 5 ) {
+ if ( i > 2 ) {
+    while ( i > 3 ) {
+    i = 7 ;
+    j = 7,0 ;
+    J = 8 ;
+    if ( j == J ) {
+    j = 9 ;
+    }
+ }
+ }
+ }
+}
+}
+
+
+
+_____________________________________
+
+src/test/GreskaSintaksa.txt
+
+class test {
+ public int i ;
+ private int c ;
+ static double j ;
+ private int J ;
+ private static int k ;
+ main ( )
+ {
+ while ( i < 5 ) {
+ if ( i > 2 ) {
+    while ( i > 3 ) {
+    i = 7 ;
+    j = 7,0 ;
+    J = 8 ;
+    if ( J == j ) {             <- double i int
+    j = J + 7 ;
+    } else {
+    J = j + 7 ;                 <- u int upisujemo double
+    }
+ }
+ }
+ }
+}
